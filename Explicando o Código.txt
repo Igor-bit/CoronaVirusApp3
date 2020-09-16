@@ -1,0 +1,76 @@
+1. Quando se clica para executar o código, a classe MainActivity é chamada.
+
+2. A classe MainActivity chama a classe activity_main (que está na pasta layout),
+que mostra a tela programada nessa classe.
+
+3. Quando se clica no botão que está na parte de baixo nesta tela do activity_main, vai para outra 
+classe chamada Atividade2.
+
+4. A classe Atividade2 chama a classe chamada tela_principal2.xml (que está na pasta layout),
+que mostra a tela programada nessa classe.
+
+5. Quando se clica no botão que está na parte de baixo nesta tela da classe Atividade2, vai para outra
+classe chamada Atividade3.
+
+6. A classe Atividade3 chama a classe chamada tela_principal3.xml (que está na pasta layout),
+que mostra a tela programada nessa classe.
+
+7. Quando se clica no botão que está na parte de baixo nesta tela da classe Atividade3, vai para outra
+classe chamada Atividade4.
+
+8. A classe Atividade 4 chama a classe chamada Teste1. Esta classe Teste1 chama a classe chamada teste.xml (que está na pasta layout).
+
+9. Esta classe chamada Teste1 contém o método chamado getResultadoDaPrimeiraPagina, que contém o
+código de 3 checkbox.
+
+10. Quando um usuário clica nos checkbox, esse método retorna o resultado dos checkbox clicados pelo usuário.
+Quando um usuário clica no botão que está na parte inferior do arquivo teste.xml, vai para outra página
+Teste2.
+
+11. A classe Teste2 chama a classe chamada teste2.xml (que está na pasta layout).
+Esta classe chamada Teste2 contém o método chamado getResultadoDaSegundaPagina, que contém o
+código de 3 checkbox.
+
+12. Quando um usuário clica nos checkbox, esse método retorna o resultado dos checkbox clicados pelo usuário.
+Quando um usuário clica no botão que está na parte inferior do arquivo teste2.xml, vai para outra página
+Teste3.
+
+13. A classe Teste3 chama a classe chamada teste3.xml (que está na pasta layout).
+Esta classe chamada Teste3 contém o método chamado getResultadoDaTerceiraPagina, que contém o
+código de 4 checkbox.
+
+14. Quando um usuário clica nos checkbox, esse método retorna o resultado dos checkbox clicados pelo usuário.
+Quando um usuário clica no botão que está na parte inferior do arquivo teste3.xml, vai para outra página
+Teste4.
+
+15. A classe Teste4 chama a classe chamada teste4.xml (que está na pasta layout).
+Esta classe chamada Teste4 contém o método chamado getResultadoDaQuartaPagina, que contém o
+código de 4 checkbox.
+
+16. Quando um usuário clica nos checkbox, esse método retorna o resultado dos checkbox clicados pelo usuário.
+Quando um usuário clica no botão que está na parte inferior do arquivo teste4.xml, vai para outra página chamada
+Resultado.
+
+17. Esta classe Resultado chama o arquivo resultado.xml (que está na pasta layout).
+Neste arquivo resultado.xml contém um TextView. Nesse TextView deve aparecer o resultado dos testes,
+de acordo com o que o usuário colocou nos CheckBox dos arquivos teste.xml, teste2.xml, teste3.xml e teste4.xml.
+
+18. Para pegar os resultados desses métodos, eu criei um objeto.
+Então:
+Para pegar o resultado do método getResultadoDaPrimeiraPagina, eu criei um objeto da classe Teste1 chamada teste1.
+Para pegar o resultado do método getResultadoDaSegundaPagina, eu criei um objeto da classe Teste2 chamada teste2.
+Para pegar o resultado do método getResultadoDaTerceiraPagina, eu criei um objeto da classe Teste3 chamada teste3.
+Para pegar o resultado do método getResultadoDaQuartaPagina, eu criei um objeto da classe Teste4 chamada teste4.
+
+19. Todos estes objetos fazem referência para acessar os métodos e atributos de cada classe.
+Eu criei uma variável chamada resultadoDoTeste1 que armazena o resultado do método getResultadoDaPrimeiraPagina.
+Eu criei uma variável chamada resultadoDoTeste2 que armazena o resultado do método getResultadoDaSegundaPagina.
+Eu criei uma variável chamada resultadoDoTeste3 que armazena o resultado do método getResultadoDaTerceiraPagina.
+Eu criei uma variável chamada resultadoDoTeste4 que armazena o resultado do método getResultadoDaQuartaPagina.
+E depois eu criei uma variável inteira chamada resultadoDoTeste, que soma todos os resultados.
+E depois vou passar a variável chamada resultadoDoTeste como parâmetro para o método chamada conferirResultado fazer os cálculos,
+e dependendo do resultado, mostrar no TextView chamado textoDoResultadoFinal, que será mostrado para o usuário.
+
+20. E em cada um desses métodos, eu passei o View v como parâmetro, porquê em cada método (getResultadoDaPrimeiraPagina, getResultadoDaSegundaPagina,
+getResultadoDaTerceiraPagina, getResultadoDaQuartaPagina, contém o View v como parâmetro.
+O problema é que está acontecendo erro no parâmetro View v, que eu não estou conseguindo corrigir.
